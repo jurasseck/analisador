@@ -1,0 +1,15 @@
+extends layout
+block content
+	form.form-horizontal
+		fieldset
+			legend Dados
+			.form-group
+				label(for='username') Username
+				input(type="text", name="username", id="username", value="", required="required", title="").form-control
+			.form-group
+				label(for='username') Password
+				input(type="password", name="password", id="password", required="required", title="").form-control
+			.form-group
+				button(type="reset").btn.btn-default Cancel
+				button(type="submit").btn.btn-primary Submit
+
